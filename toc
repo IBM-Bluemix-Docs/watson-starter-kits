@@ -1,0 +1,24 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="watson-starter-kits" audience="boilerplate" href="/docs/watson-starter-kits/index.html"}
+Watson starter kits
+
+    {: .navgroup id="learn"}
+    index.md
+    news-intelligence/index.md
+    social-customer-care/index.md
+    voice-of-the-customers/index.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    [Watson console](https://console.bluemix.net/watson/dashboard)
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    {: .topicgroup}
+    Developer community
+        [StackOverflow](https://stackoverflow.com/questions/tagged/ibm-watson-cognitive)
+        [developerWorks Answers](https://developer.ibm.com/answers/topics/watson/)
+        [WDC Slack channel](http://wdc-slack-inviter.mybluemix.net/)
+    {: .navgroup-end}
