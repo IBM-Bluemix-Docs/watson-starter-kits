@@ -118,7 +118,7 @@ On the left side of the application, you can filter interactions by customer sen
 
 Click on a user tweet to view details about their Twitter profile and personality information on the left side of the app. An emoticon in the top right corner of each user tweet indicates the sentiment of the tweet as determined by results from Natural Language Understanding's sentiment feature.
 
-**Note**: For the purposes of this starter kit, random bodies of text are substituted for the customer's past tweets. This is done to avoid the issues involved with retrieving past tweets at scale. For your application, past tweets can be retrieved with the [IBM Insights for Twitter](https://console.ng.bluemix.net/docs/services/Twitter/index.html#twitter) service available on Bluemix.
+**Note**: For the purposes of this starter kit, random bodies of text are substituted for the customer's past tweets. This is done to avoid the issues involved with retrieving past tweets at scale. For your application, past tweets can be retrieved with the [IBM Insights for Twitter](https://console.bluemix.net/docs/services/Twitter/index.html#twitter) service available on Bluemix.
 
 ## Deploying to Bluemix
 {: #deploy-to-bluemix}
@@ -143,7 +143,7 @@ Your application includes *manifest.yml* and *credentials.json* files with the h
 
 After your app is deployed, you can manage it from your [Bluemix dashboard](https://console.bluemix.net/dashboard/apps).
 
-## Adapting/extending the starter kit
+## Adapting the starter kit
 {: #adapting-the-starter-kit}
 
 This Starter Kit works off of Twitter data. However, the concepts used here are platform independent and can be applied wherever you do customer support. This includes email, SMS, Facebook, and chat/messaging apps.
