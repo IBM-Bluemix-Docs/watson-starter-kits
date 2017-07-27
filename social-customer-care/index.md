@@ -143,7 +143,7 @@ Your application includes *manifest.yml* and *credentials.json* files with the h
 
 After your app is deployed, you can manage it from your [Bluemix dashboard](https://console.bluemix.net/dashboard/apps).
 
-## Adapting/Extending the Starter Kit
+## Adapting/extending the starter kit
 {: #adapting-the-starter-kit}
 
 This Starter Kit works off of Twitter data. However, the concepts used here are platform independent and can be applied wherever you do customer support. This includes email, SMS, Facebook, and chat/messaging apps.
@@ -151,14 +151,14 @@ This Starter Kit works off of Twitter data. However, the concepts used here are 
 The following are a basic set of instructions for how to adapt the Starter Kit to your own use case.
 
 1. The Twitter feed can be changed by modifying the `TWITTER_TOPIC` variable in the *env.properties* file.
-1. The Natural Language Classifier Service needs a new ground truth for your new feed. The best approach is to collect real user tweets. An easy solution is to use the [IBM Insights for Twitter](https://console.ng.bluemix.net/docs/#services/Twitter/index.html) service available on Bluemix. Using this service, you can retrieve historical tweets from the Twitter Decahose (a 10% random sample of Tweets). Another alternative is to modify the starter kit to save incoming tweets and run the application locally. The number of tweets required will depend upon the complexity of the feed. In most cases, around 300 tweets is enough to receive respectable performance for a proof of concept, demo, or testing.
+1. The Natural Language Classifier Service needs a new ground truth for your new feed. The best approach is to collect real user tweets. An easy solution is to use the [IBM Insights for Twitter](https://console.bluemix.net/docs/#services/Twitter/index.html) service available on Bluemix. Using this service, you can retrieve historical tweets from the Twitter Decahose (a 10% random sample of Tweets). Another alternative is to modify the starter kit to save incoming tweets and run the application locally. The number of tweets required will depend upon the complexity of the feed. In most cases, around 300 tweets is enough to receive respectable performance for a proof of concept, demo, or testing.
 1. Create the ground truth for the Natural Language Classifier by classifying the tweets that you collected in the previous step.
     1. Edit the *training/classifier-training-data.csv* file so it includes new examples (column A) and intents (column B).
     1. Run the `npm run train` command to rerun the training script. This creates a new classifier, and changes the `CLASSIFIER_ID` variable in the *env.properties* file communicate with it. *Creating additional classifiers and running training events may increase your service bill. Check the [Natural Language Classifier page in Bluemix](https://console.bluemix.net/catalog/services/natural-language-classifier) for pricing details*.
 1. Decide how the application will respond for each intent. The approach taken by the Starter Kit is to provide a FAQ style response or to delegate the customer to an appropriate agent. Responses can be customized by altering the *data/default-responses.json* file. Be sure to include an entry for each intent in your classifier ground truth.
 1. Use the Personality Insights profile to drive your customer engagement strategy. The Starter Kit simply displays a few highlights from the customer's personality but much more is possible. Some examples of how to apply the service can be found in the Personality Insights [documentation](https://www.ibm.com/watson/developercloud/doc/personality-insights/basics.shtml#overviewApply).
 
-## Next Steps
+## Next steps
 {: #next-steps}
 
 Learn more about the following Watson services that were used to create this starter kit.
