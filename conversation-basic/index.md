@@ -17,16 +17,16 @@ lastupdated: "2017-08-11"
 {:python: .ph data-hd-programlang='python'}
 {:swift: .ph data-hd-programlang='swift'}
 
-# Getting Started with the Conversation Basic starter kit
+# Getting Started with the Watson Conversation Basic starter kit
 
-The Conversation Basic starter kit for Node.js visualizes the results of [{{site.data.keyword.conversationshort}}](http://www.ibm.com/watson/developercloud/conversation.html) queries. 
+The Watson Conversation Basic starter kit is a simple chat application that shows you JSON request and response details for each turn of the conversation.
 {: shortdesc}
 
 ## Before you begin
 {: #before-you-begin}
 
 - [Sign up](https://bluemix.net/registration/) for {{site.data.keyword.Bluemix_notm}}, or log into an existing account. Your account must have available space for at least one app and one service.
-- To develop locally, install [Node.js](https://nodejs.org) (version 4 or later).
+- To develop locally, install [Node.js](https://nodejs.org) (version 6 or later).
 - To host the application on {{site.data.keyword.Bluemix_notm}}, install the [{{site.data.keyword.Bluemix_notm}} CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/index.html#install_bluemix_cli).
 
 ## Generating and downloading the code
@@ -62,7 +62,7 @@ The Conversation Basic starter kit for Node.js visualizes the results of [{{site
     
 1. Go to http://localhost:8080 in a web browser to view the application.
 
-### Testing the application
+## Testing the application
 {: #test-the-application}
 
 After your app is installed and running, experiment with it to see how it responds.
@@ -85,14 +85,14 @@ Type a request, such as `music on` or `I want to turn on the windshield wipers`.
 
 For example, if you type `Turn on some music`, the JSON data shows that the system understood the `turn_on` intent with a high level of confidence, along with the `appliance` entity with a value of `music`.
 
-For more information about intents, see the [Conversation service documentation](http://www.ibm.com/watson/developercloud/conversation.html).
+For more information about intents, see the [Conversation service documentation](https://console.bluemix.net/docs/services/conversation/intents-entities.html).
 
-To see details of how these intents are defined, including sample input for each intent, launch the Conversation tool.
+To create and manage intents, launch the [Conversation tool](https://watson-conversation.ng.bluemix.net).
 
 ## Deploying to Bluemix
 {: #deploy-to-bluemix}
 
-Your application includes `manifest.yml` and `./server/localdev-config.json` files with the host settings and service credentials already set, so you can quickly deploy to {{site.data.keyword.Bluemix_notm}}.
+Your application includes a `manifest.yml` file with preconfigured hosting settings, so you can quickly deploy to {{site.data.keyword.Bluemix_notm}}.
 
 1. Open a terminal, go to your application folder, and log in to {{site.data.keyword.Bluemix_notm}} through the  {{site.data.keyword.Bluemix_notm}} CLI. For details about what to specify in the API field, go to the [How Bluemix Cloud Foundry works](https://console.{DomainName}/docs/overview/cf.html#ov_intro_reg) docs, and view the "Regions" section to locate the corresponding API endpoint for your region.
 
@@ -116,4 +116,4 @@ Your application includes `manifest.yml` and `./server/localdev-config.json` fil
 {: #next-steps}
 
 - Check out the {{site.data.keyword.conversationshort}} [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/conversation/api/v1/){: new_window}
-- Read the {{site.data.keyword.conversationshort}} [docs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/watson/developercloud/doc/conversation/index.html){: new_window}
+- Read the {{site.data.keyword.conversationshort}} [docs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/docs/services/conversation/index.html){: new_window}
