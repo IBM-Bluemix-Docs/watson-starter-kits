@@ -60,7 +60,7 @@ The Watson Conversation Basic starter kit is a simple chat application that show
     ```
     {: pre}
     
-1. Go to http://localhost:8080 in a web browser to view the application.
+1. Go to http://localhost:3000 in a web browser to view the application.
 
 ## Testing the application
 {: #test-the-application}
