@@ -19,20 +19,13 @@ lastupdated: "2017-11-13"
 
 # Deploying Watson starter kits
 
+Follow these instructions to run [Watson starter kits](https://console.bluemix.net/developer/watson/starter-kits) locally and deploy them to {{site.data.keyword.Bluemix_notm}}. View the _README.md_ file in your downloaded starter kit folder for more information.
 
-## Before you begin
-{: #before-you-begin}
-
-- [Sign up](https://bluemix.net/registration/) for {{site.data.keyword.Bluemix_notm}}, or log into an existing account. Your account must have available space for at least one app and one service.
-- To host the application on {{site.data.keyword.Bluemix_notm}}, install the [{{site.data.keyword.Bluemix_notm}} CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/index.html#install_bluemix_cli).
-
-
-## Deploying locally
+## Running locally
 {: #run-locally}
 
-
-### Node App
-{: #run-node-apps}
+### Running Node starter kits
+{: #run-locally-node}
 The following steps are for running locally with Node.js.
 
 1. To develop locally, first install [Node.js](https://nodejs.org) ([LTS](https://github.com/nodejs/Release) supported versions).
@@ -55,8 +48,8 @@ The following steps are for running locally with Node.js.
     
 1. Go to http://localhost:3000 in a web browser to view the application.
 
-### Python App
-{: #run-python-apps}
+### Running Python starter kits
+{: #run-locally-python}
 The following instructions are for running locally with Python.
 
 1. Install the prerequisites:
@@ -90,7 +83,7 @@ The following instructions are for running locally with Python.
 
 
 ## Deploying to IBM Cloud as a CloudFoundry application
-{: #deploy-to-bluemix}
+{: #deploy-to-cloud}
 
 1. To deploy your project to IBM Cloud, you will need to install the [Bluemix CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started). Open a terminal and run the command that corresponds with your operating system:
 
