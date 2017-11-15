@@ -22,7 +22,7 @@ lastupdated: "2017-11-15"
 The following instructions describe how to run [Watson starter kits](https://console.bluemix.net/developer/watson/starter-kits) locally and deploy them to {{site.data.keyword.Bluemix_notm}}. 
 {: shortdesc}
 
-Depending on the starter kit you selected, there may be additional steps required to start your application. View the _README.md_ file in your downloaded starter kit folder for more information.
+There might be additional steps required to start your application. View the `README.md` file in your downloaded starter kit directory for more information.
 {: tip}
 
 ## Running locally with Docker
@@ -105,7 +105,7 @@ Depending on the starter kit you selected, there may be additional steps require
 ## Deploying to IBM Cloud as a CloudFoundry application
 {: #deploy-to-cloud}
 
-1. To deploy your project to IBM Cloud, you will need to install the [Bluemix CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started). Open a terminal and run the command that corresponds with your operating system:
+1. Install the [Bluemix CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started). Open a terminal and run the command that corresponds with your operating system:
 
     - MacOS
 
@@ -129,7 +129,7 @@ Depending on the starter kit you selected, there may be additional steps require
         ```
         {: pre}
 
-1. Set your API endpoint. Check the top right corner of your [IBM Cloud dashboard](https://console.bluemix.net/dashboard) to determine which of the following Regions your account is set to, then run the corresponding command to set your API Endpoint.
+1. Set your API endpoint. In the menu bar on the top of your [IBM Cloud dashboard](https://console.bluemix.net/dashboard), find the IBM Cloud region that you are using, then run the corresponding command to set your API endpoint.
 
     - US South:
 
@@ -159,7 +159,7 @@ Depending on the starter kit you selected, there may be additional steps require
         ```
         {: pre}
 
-1. At the command line, go to your starter kit directory and run the following command to login to your IBM Cloud account with your IBM Cloud username and password.
+1. At the command line, go to your starter kit directory and run the following command to log in to your IBM Cloud account with your IBMid.
 
     ```bash
     bx login
