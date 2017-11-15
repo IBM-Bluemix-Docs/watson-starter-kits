@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-11"
+lastupdated: "2017-11-15"
 
 ---
 
@@ -19,5 +19,5 @@ lastupdated: "2017-07-11"
 
 # About
 
-The {{site.data.keyword.watson}} {{site.data.keyword.dev_console}} enables application developers to create projects from a variety of starter kits.  You can also configure and manage your {{site.data.keyword.watson}} services with the {{site.data.keyword.dev_console}}.
+The [{{site.data.keyword.watson}} Developer console](https://console.bluemix.net/developer/watson) enables application developers to create projects from a variety of starter kits.  You can also configure and manage your {{site.data.keyword.watson}} services from the {{site.data.keyword.watson}} Developer console.
 {:shortdesc}

@@ -6,9 +6,7 @@ Watson starter kits
 
     {: .navgroup id="learn"}
     index.md
-    conversation-basic/index.md
-    news-intelligence/index.md
-    social-customer-care/index.md
+    deploy-starter-kits/index.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
