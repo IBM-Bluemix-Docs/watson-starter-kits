@@ -10,7 +10,7 @@ Watson starter kits
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [Watson console](https://console.bluemix.net/watson/dashboard)
+    [Watson console](https://console.bluemix.net/developer/watson/dashboard/)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
