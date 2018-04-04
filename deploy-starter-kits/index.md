@@ -30,7 +30,7 @@ There might be additional steps required to start your application. View the `RE
 
 1. Install and run [Docker](https://www.docker.com).
 
-1. Install the [IBM Cloud Developer Tools CLI](https://console.bluemix.net/docs/cloudnative/dev_cli.html#add-cli).
+1. Install the [IBM Cloud Developer Tools CLI](https://console.bluemix.net/docs/cli/idt/setting_up_idt.html#add-cli).
 
 1. At the command line, go to your starter kit directory and run the following commands:
 
