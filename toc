@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="watson-starter-kits" audience="boilerplate" href="/docs/watson-starter-kits/index.html"}
+{: .toc subcollection="watson-starter-kits" audience="boilerplate" href="/docs/watson-starter-kits/index.html" path="watson-starter-kits"}
 Watson starter kits
 
     {: .navgroup id="learn"}
@@ -10,7 +10,7 @@ Watson starter kits
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [Watson console](https://console.bluemix.net/developer/watson/dashboard/)
+    [Watson console](https://cloud.ibm.com/developer/watson/)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
