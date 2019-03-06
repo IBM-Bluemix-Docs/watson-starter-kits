@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-11-15"
+  years: 2017, 2019
+lastupdated: "2019-03-06"
 
 ---
 
@@ -19,32 +19,32 @@ lastupdated: "2017-11-15"
 
 # Deploying Watson starter kits
 
-The following instructions describe how to run [Watson starter kits](https://console.bluemix.net/developer/watson/starter-kits) locally and deploy them to {{site.data.keyword.Bluemix_notm}}. 
+The following instructions describe how to run [Watson starter kits](https://cloud.ibm.com/developer/watson/starter-kits) locally and deploy them to {{site.data.keyword.cloud_notm}}. 
 {: shortdesc}
 
-There might be additional steps required to start your application. View the `README.md` file in your downloaded starter kit directory for more information.
+There might be additional steps required to start your application. View the _README.md_ file in your downloaded starter kit directory for more information.
 {: tip}
 
 ## Running locally with Docker
 {: #run-locally-with-docker}
 
-1. Install and run [Docker](https://www.docker.com).
+1. Install the [IBM Cloud developer tools](https://cloud.ibm.com/docs/cli?topic=cloud-cli-ibmcloud-cli#overview). Docker is included with the installation.
 
-1. Install the [IBM Cloud Developer Tools CLI](https://console.bluemix.net/docs/cli/idt/setting_up_idt.html#add-cli).
+2. Run the Docker application.
 
-1. At the command line, go to your starter kit directory and run the following commands:
+3. At the command line, go to your starter kit directory and run the following commands:
 
     ```sh
-    bx dev build
+    ibmcloud dev build
     ```
     {: pre}
     
     ```sh
-    bx dev run
+    ibmcloud dev run
     ```
     {:pre}
 
-1. Go to http://localhost:3000 in a web browser to view the application.
+4. Go to http://localhost:3000 in a web browser to view the application.
 
 ## Running Node starter kits locally
 {: #run-locally-with-node}
@@ -105,76 +105,31 @@ There might be additional steps required to start your application. View the `RE
 ## Deploying to IBM Cloud as a CloudFoundry application
 {: #deploy-to-cloud}
 
-1. Install the [Bluemix CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started). Open a terminal and run the command that corresponds with your operating system:
+1. Install and configure the [IBM Cloud developer tools](https://cloud.ibm.com/docs/cli?topic=cloud-cli-ibmcloud-cli#overview).
 
-    - MacOS
-
-        ```sh
-        sh <(curl -fsSL https://clis.ng.bluemix.net/install/osx)
-        ```
-        {: pre}
-
-    - Linux
-
-        ```sh
-        sh <(curl -fsSL https://clis.ng.bluemix.net/install/linux)
-        ```
-        {: pre}
-
-    - Windows Powershell
-
-        Copy and paste the following command into a Windows PowerShell terminal console and execute it.
-        ```sh
-        iex(New-Object Net.WebClient).DownloadString('https://clis.ng.bluemix.net/install/powershell')
-        ```
-        {: pre}
-
-1. Set your API endpoint. In the menu bar on the top of your [IBM Cloud dashboard](https://console.bluemix.net/dashboard), find the IBM Cloud region that you are using, then run the corresponding command to set your API endpoint.
-
-    - US South:
-
-        ```sh
-        bx api https://api.ng.bluemix.net
-        ```
-        {: pre}
-
-    - Germany:
-
-        ```sh
-        bx api https://api.eu-de.bluemix.net
-        ```
-        {: pre}
-
-    - Sydney:
-
-        ```sh
-        bx api https://api.au-syd.bluemix.net
-        ```
-        {: pre}
-
-    - United Kingdom:
-
-        ```sh
-        bx api https://api.eu-gb.bluemix.net
-        ```
-        {: pre}
-
-1. At the command line, go to your starter kit directory and run the following command to log in to your IBM Cloud account with your IBMid.
+2. At the command line, go to your starter kit directory and run the following command to log in to your IBM Cloud account with your IBM Cloud email and password.
 
     ```bash
-    bx login
+    ibmcloud login
     ```
     {: pre}
 
-1. Push the app to IBM Cloud:
+3. Target a Cloud Foundry organization and space.
+
+    ```
+    ibmcloud target --cf
+    ```
+    {: pre}
+
+4. Push the app to IBM Cloud.
 
     ```bash
-    bx app push
+    ibmcloud dev deploy
     ```
     {: pre}
     
     The app will be deployed using the settings in your project's `manifest.yml` file.
 
-1. Access your app at the URL specified in the command output.
+5. Access your app at the URL specified in the command output.
 
-    After your app is deployed, you can manage it from your [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps).
+    After your app is deployed, you can manage it from your [IBM Cloud resources](https://cloud.ibm.com/resources).
