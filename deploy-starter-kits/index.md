@@ -28,7 +28,7 @@ There might be additional steps required to start your application. View the _RE
 ## Running locally with Docker
 {: #run-locally-with-docker}
 
-1. Install the [IBM Cloud developer tools](https://cloud.ibm.com/docs/cli?topic=cloud-cli-ibmcloud-cli#overview). Docker is included with the installation.
+1. Install the [IBM Cloud developer tools](https://cloud.ibm.com/docs/cli). Docker is included with the installation.
 
 2. Run the Docker application.
 
